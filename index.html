@@ -1,170 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    @font-face {
-      font-family: 'jeju gothic';
-      src: url('font/제주고딕(윈도우).ttf');
-    }
-    @font-face {
-      font-family: 'jeju halla';
-      src: url('font/제주한라산(윈도우).ttf')
-    }
-    body{
-      font-family: 'jeju gothic';
-      line-height: 1.8;
-      color: #f5f6f7;
-    }
-    p {font-size: 16px;}
-
-    .margin{
-      margin-bottom: 45px;
-    }
-
-    .navbar{
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border:0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-    }
-    .navbar-nav li a:hover{
-      color:#1abc9c !important;
-    }
-    .bg-1{
-      background-color: #070707;
-      color:#ffffff;
-    }
-    .bg-2 {
-      background-color: #767677; /* Dark Blue */
-      color: #ffffff;
-    }
-    .bg-3 {
-      background-color: #ffffff; /* White */
-      color: #555555;
-    }
-    .bg-4{
-      background-color: #2f2f2f;
-      color: #ffffff;
-    }
-    .bg-5{
-      background-color: #dddddd;
-    }
-    .container-fluid{
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
-    .container-fluid h3{
-      font-family:'jeju halla';
-    }
-    @media screen and (max-wdith: 767px){
-      #porfolio p{
-        margin-top: 30px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/Carousel.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/nav.js"></script>
 </head>
 <body>
-  
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Lee chan young</a>
+    <!-- 사이트 제목 -->
+    <div class="site_title">Portfolio</div>
+
+    <!-- 네비게이션 바 -->
+    <nav id="header">
+      <!-- 네비게이션 바-->
+      <li class="nav nav_logo"><a href="lk.html"></a></li>
+      <div class="nav_word">Lee chanyoung</div>
+
+      <!-- 네비게이션 바-->
+      <ul class="nav_item">
+        <li class="nav nav_li">
+          <a href="#">자기소개</a>
+        </li>
+        <li class="nav nav_li">
+          <a href="#">Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- 자기소개 -->
+    <section id="about" class="section about">
+      <div class="about-content">
+        <h2 class="section-title">About Me</h2>
+        <img src="img/ex.jpg" alt="개발자 이찬영" class="profile-img">
+        <p class="intro-text">발전하는 개발자 <strong>이찬영</strong>의 포트폴리오입니다.</p>
+        <a href="https://github.com/cksdud0" class="btn-github" target="_blank">Visit My GitHub</a>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">자기소개</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">연락처</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </section>
 
-  <div class="container-fluid bg-1 text-center">
-    <h3 class="margin">이찬영의 Portfolio</h3>
-    <img src="img/ex.jpg" class="img-circle" alt="개발자">
-    <h3>발전하는 개발자 이찬영의 포트폴리오입니다.</h3>
-  </div>
-
-  <div id="about" class="container-fluid bg-2 text-center">
-    <h3 class="margin">저를 소개합니다.</h3>
-    <p>미정</p>
-    <a href="https://github.com/cksdud0" class="btn btn-default btn-lg">my github</a>
-  </div>
-
-  <div id="portfolio" class="container-fluid bg-3 text-center">
-    <h3 class="margin">Portfolio</h3>
-    <h4>Toy Project</h4>
-    <div class="row">
-      <div class="col-sm-4">
-        <p>브랜드 홍보페이지</p>
-        <img src="img/ex2.jpg" class="img-responsive" style="width:100%" alt="Image">
-        <div>
-          html,css,동영상배경,transition,animation
+    <!-- 캐러셀 컨테이너 -->
+    <div class="carousel_container">
+        <div class="carousel">
+            <!-- JavaScript에서 이미지 동적으로 추가 -->
         </div>
-      </div>
-      <div class="col-sm-4">
-        <p>쿠팡이츠 데모</p>
-        <a href="https://cksdud0.github.io/coupangeats/" target="_blank">
-        <img src="img/coupangeats.png" class="img-responsive" style="width:100%" alt="Image">
-        <div>
-          html,css,bootstrap,반응형웹
+     <!-- 좌측 화살표 -->
+                <button class="carousel-prev">&#10094;</button>
+                <!-- 우측 화살표 -->
+                <button class="carousel-next">&#10095;</button>
+    </div>
+
+    <!--리스트를 위한 컨테이너 추가 -->
+    <div class="news_container">
+        <h2>Portfolio_Toy Project</h2>
+        <div class="news_list">
+            <!-- JavaScript에서 동적으로 리스트를 추가할 공간 -->
         </div>
-        <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">more</button>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default">view</button>
-      </div>
     </div>
 
-  </div>
-</div>
-        </a>
-      </div>
-      <div class="col-sm-4">
-        <p>자바 학사관리 데모</p>
-        <img src="img/birds3.jpg" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-    </div>
-  </div>
-  
-  
-  <div id="contact" class="container-fluid bg-3 text-center">
-    <h3 class="margin">연락처</h3>
-    <p>카톡ID : well13</p>
-    <p>E-Mail : cksdud0004321@naver.com</p>
-  </div>
-  <footer class="container-fluid bg-4 text-center">
-    &copy; All rights reserved by Hong gil dong.
-  </footer>
-  
+    <!-- JavaScript 파일 연결 -->
+    <script src="js/Carousel.js"></script>
+
 </body>
 </html>
