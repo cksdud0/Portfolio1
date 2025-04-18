@@ -1,0 +1,31 @@
+{
+  "articles": [
+      {   "id":1,
+          "thumbnail_url": "img/coupangeats.png",
+          "title": "쿠팡이츠 데모",
+          "description": "html,css,bootstrap,반응형웹",
+          "article_url": "https://cksdud0.github.io/coupangeats"
+        },
+      {
+          "id":2,
+          "thumbnail_url": "img/ex2.png",
+          "title": "브랜드 홍보페이지",
+          "description": "html,css,동영상배경,transition,animation",
+          "article_url": "https://cksdud0.github.io/p1_Dior"
+      },
+      {
+          "id":3,
+          "thumbnail_url": "img/toss.png",
+          "title": "토스 홈페이지 데모(Mini1)",
+          "description": "html,css,js ",
+          "article_url": "https://cksdud0.github.io/miniProject_portfolio"
+      },
+      {
+          "id":4,
+          "thumbnail_url": "img/p2.jpg",
+          "title": "여행,맛집 기사페이지(Mini2)",
+          "description": "네 번째 제목의 간단한 설명입니다.",
+          "article_url": "news1.html"
+      }
+  ]
+}

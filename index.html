@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/Carousel.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/nav.js"></script>
+</head>
+<body>
+    <!-- 사이트 제목 -->
+    <div class="site_title">Portfolio</div>
+
+    <!-- 네비게이션 바 -->
+    <nav id="header">
+      <!-- 네비게이션 바-->
+      <li class="nav nav_logo"><a href="lk.html"></a></li>
+      <div class="nav_word">Lee chanyoung</div>
+
+      <!-- 네비게이션 바-->
+      <ul class="nav_item">
+        <li class="nav nav_li">
+          <a href="#">자기소개</a>
+        </li>
+        <li class="nav nav_li">
+          <a href="#">Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- 자기소개 -->
+    <section id="about" class="section about">
+      <div class="about-content">
+        <h2 class="section-title">About Me</h2>
+        <img src="img/ex.jpg" alt="개발자 이찬영" class="profile-img">
+        <p class="intro-text">발전하는 개발자 <strong>이찬영</strong>의 포트폴리오입니다.</p>
+        <a href="https://github.com/cksdud0" class="btn-github" target="_blank">Visit My GitHub</a>
+      </div>
+    </section>
+
+    <!-- 캐러셀 컨테이너 -->
+    <div class="carousel_container">
+        <div class="carousel">
+            <!-- JavaScript에서 이미지 동적으로 추가 -->
+        </div>
+     <!-- 좌측 화살표 -->
+                <button class="carousel-prev">&#10094;</button>
+                <!-- 우측 화살표 -->
+                <button class="carousel-next">&#10095;</button>
+    </div>
+
+    <!--리스트를 위한 컨테이너 추가 -->
+    <div class="news_container">
+        <h2>Portfolio_Toy Project</h2>
+        <div class="news_list">
+            <!-- JavaScript에서 동적으로 리스트를 추가할 공간 -->
+        </div>
+    </div>
+
+    <!-- JavaScript 파일 연결 -->
+    <script src="js/Carousel.js"></script>
+
+</body>
+</html>
