@@ -1,7 +1,7 @@
 const carousel = document.querySelector(".carousel");
 const newsList = document.querySelector(".news_list");
 const prevButton = document.querySelector(".carousel-prev");
-const nextButton = document.querySelector(".carousel-next");
+const nextButton = document.querySelector(".carousel-next");  
 let slideInterval;
 
 // ⭐ 캐러셀 이동 함수

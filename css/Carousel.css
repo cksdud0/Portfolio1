@@ -6,6 +6,10 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
+  background-image: url('../img/back.jpg'); /* 이미지 경로 확인 중요! */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /* 캐러셀 스타일 */
 .carousel_container {
